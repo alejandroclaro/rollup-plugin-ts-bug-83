@@ -1,0 +1,27 @@
+{
+  "name": "rollup-plugin-ts-bug",
+  "version": "0.0.1",
+  "description": "Example of rollup-plugin-ts issue #72",
+  "author": "foo@bar.com",
+  "private": true,
+  "npmClient": "yarn",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "build": "lerna run build --stream",
+    "clean": "lerna run clean --stream",
+    "purge": "yarn clean && rimraf node_modules"
+  },
+  "devDependencies": {
+    "lerna": "latest",
+    "rimraf": "latest"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=10.15.0",
+    "yarn": ">=1.17.0"
+  }
+}

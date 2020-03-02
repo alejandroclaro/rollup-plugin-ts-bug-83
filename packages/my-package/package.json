@@ -1,0 +1,27 @@
+{
+  "name": "@company/my-package",
+  "version": "0.0.1",
+  "description": "Example to describe a rollup-plugin-ts bug",
+  "author": "foo@bar.com",
+  "private": true,
+  "main": "dist/rollup-plugin-ts-bug.cjs.js",
+  "types": "dist/types/rollup-plugin-ts-bug.cjs.d.ts",
+  "files": [
+    "dist/*.js",
+    "dist/types"
+  ],
+  "scripts": {
+    "build": "rollup --environment NODE_ENV:development --config rollup.config.js",
+    "clean": "rimraf *.tsbuildinfo node_modules dist"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-node-resolve": "^6.1.0",
+    "@wessberg/rollup-plugin-ts": "^1.2.19",
+    "babel-core": "^6.26.3",
+    "rollup": "^1.32.0",
+    "typescript": "^3.8.3"
+  }
+}
